@@ -1,0 +1,158 @@
+# vscode 插件 REST Client, 请求工具
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+# 首页影院热映部分信息
+# ---------------------------------------------------------
+### 
+GET http://localhost:3002/list/hotShow
+# 影院热映的所有信息(所有属性)
+### 
+GET http://localhost:3002/list/hotShow
+?showAll=true
+# 分页 GET
+### 
+GET http://localhost:3002/list/hotShow
+?pageSize=9&pageNum=2
+### 
+GET http://localhost:3002/list/hotShow
+?pageSize=9&pageNum=2&showAll=true
+# 分页 POST
+### 
+POST http://localhost:3002/list/hotShow
+content-type: application/json
+
+{
+  "pageSize": 9,
+  "pageNum": 2,
+  "showAll": true
+}
+# ---------------------------------------------------------
+
+# ---------------------------------------------------------
+# 豆瓣电影
+### 
+GET http://localhost:3002/list/hotMovie
+### 
+GET http://localhost:3002/list/hotMovie
+?showAll=true
+# 分页 GET
+### 
+GET http://localhost:3002/list/hotMovie
+?pageSize=9&pageNum=2
+### 
+GET http://localhost:3002/list/hotMovie
+?pageSize=9&pageNum=2&showAll=true
+# 分页 POST
+### 
+POST http://localhost:3002/list/hotMovie
+content-type: application/json
+
+{
+  "pageSize": 9,
+  "pageNum": 2,
+  "showAll": true
+}
+# ---------------------------------------------------------
+
+# 首页热门综艺
+# ---------------------------------------------------------
+### 
+GET http://localhost:3002/list/hotTvShow
+### 
+GET http://localhost:3002/list/hotTvShow
+?showAll=true
+### 
+GET http://localhost:3002/list/hotTvShow
+?pageSize=9&pageNum=2
+### 
+GET http://localhost:3002/list/hotTvShow
+?pageSize=9&pageNum=2&showAll=true
+### 
+POST http://localhost:3002/list/hotTvShow
+content-type: application/json
+
+{
+  "pageSize": 9,
+  "pageNum": 2
+}
+# ---------------------------------------------------------
+
+# 首页畅销图书
+# ---------------------------------------------------------
+### 
+GET http://localhost:3002/list/hotBook
+### 
+GET http://localhost:3002/list/hotBook
+?showAll=true
+### 
+GET http://localhost:3002/list/hotBook
+?pageSize=9&pageNum=2
+### 
+GET http://localhost:3002/list/hotBook
+?pageSize=9&pageNum=2&showAll=true
+### 
+POST http://localhost:3002/list/hotBook
+content-type: application/json
+
+{
+  "pageSize": 9,
+  "pageNum": 2
+}
+# ---------------------------------------------------------
+
+
+# 首页热门单曲
+# ---------------------------------------------------------
+### 
+GET http://localhost:3002/list/hotMusic
+### 
+GET http://localhost:3002/list/hotMusic
+?showAll=true
+### 
+GET http://localhost:3002/list/hotMusic
+?pageSize=9&pageNum=2
+### 
+GET http://localhost:3002/list/hotMusic
+?pageSize=9&pageNum=2&showAll=true
+### 
+POST http://localhost:3002/list/hotMusic
+content-type: application/json
+
+{
+  "pageSize": 9,
+  "pageNum": 2
+}
+# ---------------------------------------------------------
+
+# top250
+# ---------------------------------------------------------
+### 
+GET http://localhost:3002/list/top250
+### 
+GET http://localhost:3002/list/top250
+?showAll=true
+### 
+GET http://localhost:3002/list/top250
+?pageSize=9&pageNum=2
+### 
+GET http://localhost:3002/list/top250
+?pageSize=9&pageNum=2&showAll=true
+### 
+POST http://localhost:3002/list/top250
+content-type: application/json
+
+{
+  "pageSize": 9,
+  "pageNum": 2
+}
+# ---------------------------------------------------------
+
+# ---------------------------------------------------------
+###
+POST http://localhost:3002/searchById
+content-type: application/json
+
+{
+  "type": "hotShow",
+  "id": "000003"
+}
+# ---------------------------------------------------------
