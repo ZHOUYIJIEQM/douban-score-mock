@@ -32,7 +32,7 @@ function generateRandomNum(n = 5, sum = 100, exact = 1) {
  * @param {number} dataLen 要生成多少条数据
  * @returns 
  */
-function generateData(typeName, dataLen = 21) {
+function generateData(typeName, dataLen = 9) {
   let list = []
 
   for (let index = 0; index < dataLen; index++) {
@@ -66,7 +66,7 @@ function generateData(typeName, dataLen = 21) {
           let name = Mock.Random.name()
           res.push(Mock.mock({
             name: name,
-            avatar: Mock.Random.image('250x400', Mock.mock('@color'), '#fff', 'png', name),
+            avatar: Mock.Random.image('250x350', Mock.mock('@color'), '#fff', 'png', name),
             identity: index ? '演员' : '导演'
           }))
         }
